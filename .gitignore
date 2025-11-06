@@ -84,12 +84,95 @@ tmp/
 
 # API keys and secrets
 .env
+.env.*
 .env.local
+.env.development
 .env.production
 .env.staging
+.env.test
+*.env
 config/secrets.json
+config/secrets.yaml
+config/secrets.yml
+secrets/
 *.key
 *.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.csr
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+known_hosts
+authorized_keys
+
+# Database credentials and connection strings
+database.json
+db_config.json
+connection_strings.txt
+*.db-journal
+*.sqlite
+*.sqlite3
+*.db
+
+# Cloud provider credentials
+.aws/
+.azure/
+.gcp/
+gcloud/
+aws-credentials
+azure-credentials
+gcp-credentials
+service-account*.json
+*-service-account.json
+credentials.json
+client_secret*.json
+token.json
+refresh_token.json
+
+# Authentication tokens and sessions
+access_token*
+refresh_token*
+session_token*
+jwt_secret*
+auth_token*
+bearer_token*
+api_token*
+*.token
+tokens/
+sessions/
+
+# Configuration files with sensitive data
+config.local.*
+config.private.*
+config.secret.*
+local_settings.py
+private_settings.py
+secret_settings.py
+settings.local.*
+settings.private.*
+settings.secret.*
+
+# IDE and editor sensitive files
+.vscode/settings.json
+.vscode/launch.json
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/shelf/
+*.sublime-workspace
+*.sublime-project
+
+# Kiro IDE settings (may contain sensitive data)
+.kiro/settings/
+.kiro/user/
+.kiro/auth/
+.kiro/tokens/
 
 # Cache directories
 .cache/
@@ -135,4 +218,131 @@ coverage/
 docs/_build/
 site/
 
+# Deployment and infrastructure secrets
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.prod.yml
+docker-compose.secrets.yml
+.dockerignore.local
+Dockerfile.local
+k8s-secrets/
+kubernetes-secrets/
+helm-secrets/
+terraform.tfvars
+terraform.tfvars.json
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# CI/CD secrets
+.github/secrets/
+.gitlab-ci-local.yml
+.travis.yml.local
+circle.yml.local
+jenkins.local.*
+buildkite.local.*
+
+# Monitoring and logging credentials
+grafana/
+prometheus/
+elasticsearch/
+kibana/
+logstash/
+fluentd/
+datadog/
+newrelic/
+sentry/
+*.monitoring
+*.logging
+
+# Email and communication service credentials
+sendgrid/
+mailgun/
+twilio/
+slack/
+discord/
+telegram/
+whatsapp/
+*.smtp
+*.email
+
+# Payment and financial service credentials
+stripe/
+paypal/
+square/
+braintree/
+razorpay/
+payu/
+*.payment
+*.billing
+
+# Social media and OAuth credentials
+facebook/
+google/
+twitter/
+linkedin/
+github/
+gitlab/
+bitbucket/
+oauth/
+*.oauth
+*.social
+
+# Machine Learning and AI service credentials
+openai/
+anthropic/
+huggingface/
+aws-ml/
+azure-ml/
+gcp-ml/
+*.ml-api
+*.ai-api
+
+# Backup and sync service credentials
+dropbox/
+gdrive/
+onedrive/
+icloud/
+*.backup
+*.sync
+
+# Development tools with sensitive data
+.npmrc
+.yarnrc
+.pip/
+pip.conf
+pip.ini
+.pypirc
+.gemrc
+.bundle/
+composer.auth.json
+
+# Local development overrides
+local/
+local.*/
+*.local
+*.dev
+*.development
+override/
+overrides/
+custom/
+personal/
+
+# Temporary sensitive files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.swp
+*.tmp
+*~
+.#*
+#*#
+
 models/
+
+.kiro/settings/mcp.json
+.env
+*.env
