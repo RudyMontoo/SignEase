@@ -1,0 +1,47 @@
+/* Custom styles for SignEase MVP */
+
+.webcam-container {
+  position: relative;
+  display: inline-block;
+}
+
+.landmark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.gesture-confidence-bar {
+  transition: width 0.3s ease-in-out;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-connected {
+  background-color: #10b981;
+}
+
+.status-disconnected {
+  background-color: #ef4444;
+}
+
+.status-processing {
+  background-color: #f59e0b;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
